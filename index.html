@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-<body>
-  <style>
-    body {background-color: seashell;}
-    h1 {color: beige;}
-    p {color: crimson;}
-  </style>
-<h1 style="font-family:Georgia;">Ajai Upadhyaya</h1>  
-<p style="font-family:Georgia;">This is the first step of my personal website as of July 5th, 2023</p>
-<p style="font-family:Georgia;">Test paragraph, there are no rules in HTML, just fun words and symbols </p>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+<body>
+    <div id="wheel">
+        <div id="inner-wheel">
+            <div class="sec"><span class="label">Spin</span></div>
+            <div class="sec"><span class="label">The</span></div>
+            <div class="sec"><span class="label">Wheel</span></div>
+            <div class="sec"><span class="label">To</span></div>
+            <div class="sec"><span class="label">Win</span></div>
+        </div>
+        <div id="spin">
+            <div id="inner-spin"></div>
+        </div>
+    </div>
+    <button id="spin-button">Spin the Wheel!</button>
+    <div id="result"></div>
 </body>
+<script src="script.js"></script>
 </html>
