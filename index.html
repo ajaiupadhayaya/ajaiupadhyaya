@@ -44,7 +44,7 @@
                     <p class="tab-links" onclick="opentab('Experience')">Experience</p>
                     <p class="tab-links" onclick="opentab('Skills')">Skills</p>
                 </div>
-                <div class="tab-contents active-tab">
+                <div class="tab-contents active-tab" id="education">
                     <ul>
                         <span></span>Noteable CS and Economics</span> Coursework:
                         <br>
@@ -64,7 +64,7 @@
                         <span>3.822 GPA</span>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="Experience">
                     <ul>
                         <span></span>Experience Sample</span> SAMPLE:
                         <br>
@@ -84,7 +84,7 @@
                         <span>SAMPLE</span>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="Skills">
                     <ul>
                         <span></span>SKILLS SAMPLE</span> SAMPLE:
                         <br>
@@ -109,5 +109,24 @@
     </div>
 </div>
 </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
 </body>
 </html>
