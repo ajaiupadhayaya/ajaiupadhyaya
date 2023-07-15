@@ -335,3 +335,9 @@ form btn2{
 .copyright i{
     color: moccasin;
 }
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url();
+    }
+}
